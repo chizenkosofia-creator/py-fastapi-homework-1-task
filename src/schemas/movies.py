@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field
 class MovieDetailResponseSchema(BaseModel):
     id: int
     name: str
-    date: Optional[date] = Field(default=None)
+    date: date
     score: float
     genre: Optional[str] = None
     overview: Optional[str] = None
